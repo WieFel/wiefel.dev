@@ -1,24 +1,24 @@
 <script lang="ts">
-	import type { Feature } from '$lib/utils/types';
-	import FeatureCard from '$lib/components/molecules/FeatureCard.svelte';
+	import type { Project } from '$lib/utils/types';
+	import ProjectCard from '$lib/components/molecules/ProjectCard.svelte';
 	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
 
-	export let features: Feature[];
+	export let projects: Project[];
 </script>
 
 <ContentSection
-	id="features"
-	title="Features"
-	description="Here are some of the features of this template"
+	id="projects"
+	title="Projects"
+	description="Here are some of the projects of this template"
 >
-	<div class="features-container">
+	<div class="projects-container">
 		<div class="three-group-grid">
-			{#each features as feature}
-				<FeatureCard
-					name={feature.name}
-					description={feature.description}
-					image={feature.image}
-					tags={feature.tags}
+			{#each projects as project}
+				<ProjectCard
+					name={project.name}
+					description={project.description}
+					image={project.image}
+					tags={project.tags}
 				/>
 			{/each}
 		</div>
@@ -28,7 +28,7 @@
 <style lang="scss">
 	@import '$lib/scss/breakpoints.scss';
 
-	.features-container {
+	.projects-container {
 		width: 100%;
 		display: grid;
 		grid-template-columns: 1fr;

@@ -1,5 +1,5 @@
 <script>
-	import FeaturesIcon from '$lib/icons/features.svelte';
+	import ProjectsIcon from '$lib/icons/projects.svelte';
 	import GitHubIcon from '$lib/icons/socials/github.svelte';
 	import Button from '$lib/components/atoms/Button.svelte';
 	import Sparkles from '../atoms/Sparkles.svelte';
@@ -19,7 +19,7 @@
 			</Button>
 		</Sparkles>
 		<Button color="primary" href="https://histoire-sveltekit-static-blog-template.vercel.app/">
-			<FeaturesIcon slot="icon" />
+			<ProjectsIcon slot="icon" />
 			Components
 		</Button>
 	</div>

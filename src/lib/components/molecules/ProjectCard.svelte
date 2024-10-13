@@ -10,9 +10,9 @@
 	export let tags: TagType[] | undefined;
 </script>
 
-<Card additionalClass="feature-card">
+<Card additionalClass="project-card">
 	<div class="image" slot="image">
-		<Image src={image} alt="Picture describing the {name} feature" />
+		<Image src={image} alt="Picture describing the {name} project" />
 	</div>
 	<div class="content" slot="content">
 		<div class="title">
@@ -61,7 +61,7 @@
 		margin-top: 20px;
 	}
 
-	:global(.feature-card .image img) {
+	:global(.project-card .image img) {
 		object-fit: cover;
 	}
 </style>

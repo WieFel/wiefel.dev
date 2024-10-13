@@ -1,4 +1,4 @@
-import type { Feature } from "$lib/utils/types";
+import type { Project } from "$lib/utils/types";
 
 export default [ 
   {
@@ -40,4 +40,4 @@ export default [
       'All code is open source, which means you can copy and modify it to your heart\'s content. All I ask is that you make your code open too so that knowledge can be passed on.',
     image: 'images/features/open-source.jpg'
   },
-] as Feature[];
+] as Project[];

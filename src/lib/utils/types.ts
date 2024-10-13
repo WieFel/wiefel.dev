@@ -17,7 +17,7 @@ export type SocialLink = {
   
 }
 
-export type Feature = {
+export type Project = {
   name: string,
   description: string,
   image: string,
