@@ -3,14 +3,17 @@
 	import About from '$lib/components/organisms/About.svelte';
 	// import RecentPosts from '$lib/components/organisms/RecentPosts.svelte';
 	import Projects from '$lib/components/organisms/Projects.svelte';
-	import type { Project, BlogPost } from '$lib/utils/types';
+	import type { Project, BlogPost, WorkExperience } from '$lib/utils/types';
+	import Experience from '$lib/components/organisms/Experience.svelte';
 
 	export let data: {
 		projects: Project[];
 		posts: BlogPost[];
+		yearsOfExperience: number;
+		workExperience: WorkExperience[];
 	};
 
-	let { projects, posts } = data;
+	let { projects, posts, yearsOfExperience, workExperience } = data;
 </script>
 
 <div class="container">
@@ -20,4 +23,5 @@
 		<RecentPosts {posts} />
 	{/if} -->
 	<Projects {projects} />
+	<Experience {yearsOfExperience} entries={workExperience} />
 </div>

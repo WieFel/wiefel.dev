@@ -14,13 +14,24 @@ export type TagType = {
 }
 
 export type SocialLink = {
-  
+
 }
 
 export type Project = {
   name: string,
   description: string,
   image: string,
+  tags: TagType[]
+}
+
+export type WorkExperience = {
+  companySlug: string,
+  company: string,
+  jobTitle: string,
+  timeframe: string,
+  current?: boolean,
+  location: string,
+  description: string,
   tags: TagType[]
 }
 
