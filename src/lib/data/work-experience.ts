@@ -8,7 +8,7 @@ export default [
     timeframe: '09/2023 - present',
     current: false,
     location: 'Málaga, Spain',
-    description: 'Working as a freelance front end engineer for both companies, using Flutter for mobile apps, like the Feldfühler App and an agricultural irrigation project that is in elaboration. Also working on AI topics and web projects.',
+    description: 'Working as a freelance front end engineer for both companies, developing apps like the Feldfühler and Feldwasser Apps, two agricultural projects. Also working on AI topics and web projects.',
     tags: [{ label: 'Angular', color: 'primary' }, { label: 'Python', color: 'secondary' }, { label: 'Flutter', color: 'primary' }, { label: 'Dart', color: 'secondary' }],
   },
   {
@@ -18,7 +18,7 @@ export default [
     timeframe: '11/2020 - 09/2023',
     current: false,
     location: 'Tuggen, Switzerland',
-    description: 'Leading the front-end development team, by coordinating and supporting the development of web applications. Developing Android/iOS apps.',
+    description: 'Leading the front-end development team, by coordinating and supporting the development of web applications, especially on the company\'s main product: the energy management platform. Developing the energy management app for Android/iOS and other apps, using Flutter.',
     tags: [{ label: 'Vue.js', color: 'primary' }, { label: 'React', color: 'primary' }, { label: 'Flutter', color: 'primary' }, { label: 'Dart', color: 'secondary' }],
   },
   {
