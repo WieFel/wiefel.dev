@@ -21,7 +21,9 @@ export type Project = {
   name: string,
   description: string,
   image: string,
-  tags: TagType[]
+  tags: TagType[],
+  year: number,
+  type: string
 }
 
 export type WorkExperience = {

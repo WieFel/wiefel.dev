@@ -2,42 +2,109 @@ import type { Project } from "$lib/utils/types";
 
 export default [ 
   {
-    name: 'Markdown Support',
+    name: 'This webpage',
     description:
-      'Blog posts are written in Markdown, a simple and nearly-universal format. This means you can bring over your posts from other platforms, and easily export to another if you want to.',
-    image: 'images/features/markdown.jpg',
-    tags: [{ label: 'Powered by MDsveX' }]
-  }, 
+    'My portfolio page showing the projects I made and the work experience that I have.',
+    image: 'images/features/open-source.jpg',
+    tags: [{ label: 'Svelte', color: 'primary' }],
+    type: 'Web App',
+    year: '2024',
+  },
   {
-    name: 'Themeable',
+    name: 'TinyColor 2',
     description:
-      'You can easily theme the entire website by changing just a few colors in the _themes.scss file.',
-    image: 'images/features/themeable.jpg',
-    tags: [{ label: 'Primary Color' }, { label: 'Secondary Color', color: 'secondary' }]
-  }, 
+    'Co-Maintainer of the community fork tinycolor2, forked from the original tinycolor Flutter package.',
+    image: 'images/features/open-source.jpg',
+    tags: [{ label: 'Svelte', color: 'primary' }],
+    type: 'Flutter package',
+    year: '2021',
+  },
   {
-    name: 'Extensible',
+    name: 'Number Paginator',
     description:
-      'Components are built to be reused, and you can build new pages and layouts without much CSS knowledge. You can see all components in Histoire by running "npm run story:dev"',
-    image: 'images/features/extensible.jpg',
-  }, 
+    'Maintainer of number_paginator, a Flutter package for implementing pagination using page numbers.',
+    image: 'images/features/open-source.jpg',
+    tags: [{ label: 'Svelte', color: 'primary' }],
+    type: 'Flutter package',
+    year: '2021',
+  },
   {
-    name: 'Well Optimized',
+    name: 'HSV Color Pickers',
     description:
-      'Images are automatically optimized and lazy loaded, to ensure the website loads as fast as possible regardless of connection speed.',
-    image: 'images/features/optimized.jpg',
-    tags: [{ label: 'Powered by Image Transmutation' }]
-  }, 
+    'Maintainer of hsv_color_pickers, a Flutter package that offers widgets for picking the different attributes of a HSV color: hue, saturation and value.',
+    image: 'images/features/open-source.jpg',
+    tags: [{ label: 'Svelte', color: 'primary' }],
+    type: 'Flutter package',
+    year: '2021',
+  },
   {
-    name: 'Light and Dark Modes',
+    name: 'Gallerize',
     description:
-      'This template was built with dark mode in mind. It can swap between themes automatically (based on system settings) or manually. Both themes can be tweaked in the _themes.scss file.',
+    'Maintainer of Gallerize, a Flutter package for creating a gallery (demo) app for developed Flutter packages/widgets.',
+    image: 'images/features/open-source.jpg',
+    tags: [{ label: 'Svelte', color: 'primary' }],
+    type: 'Flutter package',
+    year: '2020',
+  },
+  {
+    name: 'GWL Webpage',
+    description:
+    'The web page of the law office Gapp Wielander Laurenza.',
+    image: 'images/features/open-source.jpg',
+    tags: [{ label: 'Svelte', color: 'primary' }],
+    type: 'Webpage',
+    year: '2020',
+  },
+  {
+    name: 'Bleckl',
+    description:
+    'Re-make of WattenZähler. Point counter for the South Tyrolean card games Watten & Sockn.',
+    image: 'images/features/open-source.jpg',
+    tags: [{ label: 'Flutter', color: 'secondary' }],
+    type: 'App',
+    year: '2020',
+  },
+  {
+    name: 'Backdrop',
+    description:
+    'I am co-maintainer of the Backdrop package of Flutter Community. It implements the backdrop-functionality from the Material Design specification.',
     image: 'images/features/light-dark.jpg',
+    type: 'Flutter package',
+    year: '2019',
   },
   {
-    name: 'Open Source',
+    name: 'Lyrics-Genre-Classification',
     description:
-      'All code is open source, which means you can copy and modify it to your heart\'s content. All I ask is that you make your code open too so that knowledge can be passed on.',
-    image: 'images/features/open-source.jpg'
-  },
+      'TUM seminar project for classifying the genre of a music track only by looking at its lyrics text, using natural language processing (NLP).',
+    image: 'images/features/optimized.jpg',
+    tags: [{ label: 'Powered by Image Transmutation' }],
+    type: 'Seminar Project',
+    year: '2019',
+  }, 
+  {
+    name: 'VerkehrsInfo Radio 2000',
+    description:
+      'Traffic announcements in South Tyrol supported by the traffic reporting centre. Powered by Radio 2000.',
+    image: 'images/features/extensible.jpg',
+    type: 'App',
+    year: '2014',
+  }, 
+  {
+    name: 'dieAntenne - Sportergebnisse',
+    description:
+      'South Tyrolean live football scores. Powered by Radio Die Antenne. (not officially in use anymore)',
+    image: 'images/features/themeable.jpg',
+    tags: [{ label: 'Primary Color' }, { label: 'Secondary Color', color: 'secondary' }],
+    type: 'App',
+    year: '2013',
+  }, 
+  {
+    name: 'WattenZähler',
+    description:
+      'Point counter for the South Tyrolean card game Watten. (Now replaced by Bleckl)',
+    image: 'images/features/markdown.jpg',
+    tags: [{ label: 'Native Android', color: 'primary' }],
+    type: 'App',
+    year: 2012,
+  }, 
 ] as Project[];
