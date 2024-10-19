@@ -3,13 +3,23 @@ import type { WorkExperience } from "$lib/utils/types";
 export default [
   {
     companySlug: 'secondary',
-    company: 'Netscrapers/AIoT Solutions',
-    jobTitle: 'Software Engineer - Freelance',
-    timeframe: '09/2023 - present',
+    company: 'Freelancer',
+    jobTitle: 'Software Engineer, App Developer',
+    timeframe: '02/2024 - present',
     current: false,
     location: 'Málaga, Spain',
-    description: 'Working as a freelance front end engineer for both companies, developing apps like the Feldfühler and Feldwasser Apps, two agricultural projects. Also working on AI topics and web projects.',
+    description: 'Working as a freelance front end engineer for Netscrapers/AIoT Solutions. Working on side projects with Flutter and on AI topics.',
     tags: [{ label: 'Angular', color: 'primary' }, { label: 'Python', color: 'secondary' }, { label: 'Flutter', color: 'primary' }, { label: 'Dart', color: 'secondary' }],
+  },
+  {
+    companySlug: 'secondary',
+    company: 'Netscrapers/AIoT Solutions',
+    jobTitle: 'Software Engineer',
+    timeframe: '09/2023 - 01/2024',
+    current: false,
+    location: 'Málaga, Spain',
+    description: 'Working as a freelance front end engineer for both companies, developing apps like the Feldfühler and Feldwasser Apps, two agricultural projects.',
+    tags: [{ label: 'Angular', color: 'primary' }, { label: 'Flutter', color: 'primary' }, { label: 'Dart', color: 'secondary' }],
   },
   {
     companySlug: 'secondary',
