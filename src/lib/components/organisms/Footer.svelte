@@ -9,9 +9,7 @@
 		<FooterWave />
 	</div>
 	<div class="content">
-		<div class="copyright">
-			© 2024 Felix Wielander
-		</div>
+		<div class="copyright">© 2024 Felix Wielander</div>
 		<div class="credits">
 			Powered by <a href="https://kit.svelte.dev/" target="_blank" rel="noopener noreferrer"
 				>SvelteKit</a
@@ -44,7 +42,7 @@
 
 			.credits {
 				font-weight: 400;
-				font-size: 90%;
+				font-size: 70%;
 				color: var(--color--text-shade);
 			}
 
