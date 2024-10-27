@@ -33,12 +33,12 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 15px;
+		gap: 32px;
 		position: relative;
-		padding: 80px 0;
+		padding: 96px 0;
 
 		@include for-phone-only {
-			padding: 40px 0 50px;
+			padding: 64px 0;
 		}
 
 		.hello {
@@ -59,9 +59,9 @@
 				text-align: right;
 			}
 
-			@include for-phone-only {
-				display: none;
-			}
+			// @include for-phone-only {
+			// 	display: none;
+			// }
 		}
 
 		.ctas {
