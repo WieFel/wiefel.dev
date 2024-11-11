@@ -1,12 +1,19 @@
 <svg
-	fill="currentColor"
-	width="24px"
-	height="24px"
-	viewBox="0 0 24 24"
-	role="img"
+	version="1.1"
+	id="Icons"
 	xmlns="http://www.w3.org/2000/svg"
-	><path
-		stroke="currentColor"
-		d="M4.105 4.105S9.158 1.58 11.684.316a3.079 3.079 0 0 1 1.481-.315c.766.047 1.677.788 1.677.788L24 9.948v9.789h-4.263V24H9.789l-9-9C.303 14.5 0 13.795 0 13.105c0-.319.18-.818.316-1.105l3.789-7.895zm.679.679v11.787c.002.543.021 1.024.498 1.508L10.204 23h8.533v-4.263L4.784 4.784zm12.055-.678c-.899-.896-1.809-1.78-2.74-2.643-.302-.267-.567-.468-1.07-.462-.37.014-.87.195-.87.195L6.341 4.105l10.498.001z"
-	/></svg
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	viewBox="0 0 32 32"
+	xml:space="preserve"
+	fill="none"
+	stroke="currentColor"
+	stroke-width="1.5"
 >
+	<line class="st0" x1="16" y1="16" x2="22" y2="10" />
+	<polygon class="st0" points="30,6 26,6 26,2 22,6 22,10 26,10 " />
+	<circle class="st0" cx="16" cy="16" r="6" />
+	<path
+		class="st0"
+		d="M27,9c1.3,2,2,4.4,2,7c0,7.2-5.8,13-13,13S3,23.2,3,16S8.8,3,16,3c2.6,0,5,0.7,7,2"
+	/>
+</svg>
