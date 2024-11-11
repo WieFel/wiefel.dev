@@ -10,12 +10,6 @@
 	</div>
 	<div class="content">
 		<div class="copyright">© 2024 Felix Wielander</div>
-		<div class="credits">
-			Powered by <a href="https://kit.svelte.dev/" target="_blank" rel="noopener noreferrer"
-				>SvelteKit</a
-			>. Icons by
-			<a href="https://iconoir.com/" target="_blank" rel="noopener noreferrer">Iconoir</a>.
-		</div>
 		<div class="socials">
 			<Socials />
 			<ThemeToggle />
@@ -39,12 +33,6 @@
 			gap: 15px;
 			font-weight: 600;
 			text-align: center;
-
-			.credits {
-				font-weight: 400;
-				font-size: 70%;
-				color: var(--color--text-shade);
-			}
 
 			.socials {
 				display: flex;
