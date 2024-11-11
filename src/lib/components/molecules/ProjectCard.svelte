@@ -1,7 +1,9 @@
 <script lang="ts">
 	import Card from '$lib/components/atoms/Card.svelte';
 	import Tag from '$lib/components/atoms/Tag.svelte';
+	import Android from '$lib/icons/android.svelte';
 	import Apple from '$lib/icons/apple.svelte';
+	import Dart from '$lib/icons/dart.svelte';
 	import ExternalLink from '$lib/icons/external-link.svelte';
 	import Github from '$lib/icons/socials/github.svelte';
 	import type { Project, TagType } from '$lib/utils/types';
@@ -40,7 +42,7 @@
 						rel="noopener noreferrer"
 						title="Open on Play Store"
 					>
-						<Apple />
+						<Android />
 					</a>
 				{/if}
 				{#if project.appStore}
@@ -60,7 +62,7 @@
 						rel="noopener noreferrer"
 						title="Open on pub.dev"
 					>
-						<Apple />
+						<Dart />
 					</a>
 				{/if}
 			</div>
