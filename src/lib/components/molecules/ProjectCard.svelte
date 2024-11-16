@@ -30,11 +30,6 @@
 						<Github />
 					</a>
 				{/if}
-				{#if project.webpage}
-					<a href={project.webpage} target="_blank" rel="noopener noreferrer" title="Open Webpage">
-						<ExternalLink />
-					</a>
-				{/if}
 				{#if project.playStore}
 					<a
 						href={project.playStore}
@@ -63,6 +58,11 @@
 						title="Open on pub.dev"
 					>
 						<Dart />
+					</a>
+				{/if}
+				{#if project.webpage}
+					<a href={project.webpage} target="_blank" rel="noopener noreferrer" title="Open Webpage">
+						<ExternalLink />
 					</a>
 				{/if}
 			</div>

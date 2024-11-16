@@ -30,8 +30,8 @@ export default [
     tags: [{ label: 'Flutter Package', color: 'primary' }, { label: '2021', color: 'secondary' }],
     type: 'Flutter package',
     year: '2021',
-    github: 'https://github.com/TinyCommunity',
-    pubDev: 'https://tinycommunity.dev'
+    github: 'https://github.com/TinyCommunity/tinycolor2',
+    pubDev: 'https://pub.dev/packages/tinycolor2',
   },
   {
     name: 'Number Paginator',
