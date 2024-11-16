@@ -2,15 +2,6 @@ import type { Project } from "$lib/utils/types";
 
 export default [
   {
-    name: 'This webpage',
-    description:
-      'My portfolio page showing the projects I made and the work experience that I have.',
-    image: 'images/sample-image.png',
-    tags: [{ label: 'Web Page', color: 'primary' }, { label: '2024', color: 'secondary' }],
-    type: 'Web App',
-    year: '2024',
-  },
-  {
     name: 'This Person Does Not Exist',
     description:
       'Flutter app reproducing the web page thispersondoesnotexist.com, which generates not existing people using AI.',
