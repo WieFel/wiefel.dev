@@ -4,11 +4,11 @@ export default [
   {
     companySlug: 'secondary',
     company: 'Freelancer',
-    jobTitle: 'Software Engineer, App Developer',
+    jobTitle: 'Software Engineer',
     timeframe: '02/2024 - present',
     current: false,
     location: 'Málaga, Spain',
-    description: 'Working as a freelance front end engineer for Netscrapers/AIoT Solutions. Working on side projects with Flutter and on AI topics.',
+    description: 'Working as a freelance full stack engineer for Netscrapers/AIoT Solutions. Working on app projects with Flutter and on AI topics.',
     tags: [{ label: 'Angular', color: 'primary' }, { label: 'Python', color: 'secondary' }, { label: 'Flutter', color: 'primary' }, { label: 'Dart', color: 'secondary' }],
   },
   {
