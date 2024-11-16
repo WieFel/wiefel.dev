@@ -15,7 +15,7 @@
 <Card>
 	<div class="content" slot="content">
 		<p class="title">
-			<TintHighlight color={companySlug}>{company}</TintHighlight>
+			{company}
 		</p>
 		<p>{jobTitle}</p>
 		<p class="note">{timeframe}</p>
