@@ -57,9 +57,7 @@
 
 		text-decoration: none;
 
-		&[href],
-		&[onclick] {
-			cursor: pointer;
+		& {
 			&:hover {
 				box-shadow: var(--card-shadow-hover);
 				transform: scale(1.01);
