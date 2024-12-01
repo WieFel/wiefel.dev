@@ -18,7 +18,7 @@
 		</div>
 	</div>
 	<div class="image">
-		<Image src="/images/logo.png" alt="Logo" />
+		<Image src="/images/logo.svg" alt="Logo" />
 	</div>
 </section>
 

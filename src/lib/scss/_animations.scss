@@ -6,17 +6,22 @@
 		stroke-dasharray: 0 50%;
 		stroke-width: 2;
 	}
+
 	70% {
 		fill: transparent;
 		stroke: var(--text-color);
 	}
+
 	80% {
-		fill: transparent;
+		fill: url(#gradient);
+		fill-opacity: 0.0;
 		stroke: var(--text-color);
 		stroke-width: 3;
 	}
+
 	100% {
-		fill: var(--text-color);
+		fill: url(#gradient);
+		fill-opacity: 1.0;
 		stroke: transparent;
 		stroke-dashoffset: -25%;
 		stroke-dasharray: 50% 0;
@@ -28,6 +33,7 @@
 	from {
 		transform: rotate(0turn);
 	}
+
 	to {
 		transform: rotate(1turn);
 	}
