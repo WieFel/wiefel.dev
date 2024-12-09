@@ -1,6 +1,6 @@
 <script>
 	import ProjectsIcon from '$lib/icons/projects.svelte';
-	import GitHubIcon from '$lib/icons/socials/github.svelte';
+	import ExperienceIcon from '$lib/icons/experience.svelte';
 	import Button from '$lib/components/atoms/Button.svelte';
 	import Sparkles from '../atoms/Sparkles.svelte';
 </script>
@@ -13,14 +13,14 @@
 	</p>
 	<div class="ctas">
 		<Sparkles>
-			<Button href="https://github.com/matfantinel/sveltekit-static-blog-template">
-				<GitHubIcon slot="icon" />
-				Source Code
+			<Button href="#projects">
+				<ProjectsIcon slot="icon" />
+				Projects
 			</Button>
 		</Sparkles>
-		<Button color="primary" href="https://histoire-sveltekit-static-blog-template.vercel.app/">
-			<ProjectsIcon slot="icon" />
-			Components
+		<Button color="primary" href="#experience">
+			<ExperienceIcon slot="icon" />
+			Experience
 		</Button>
 	</div>
 </section>
@@ -33,12 +33,12 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 15px;
+		gap: 32px;
 		position: relative;
-		padding: 80px 0;
+		padding: 96px 0;
 
 		@include for-phone-only {
-			padding: 40px 0 50px;
+			padding: 64px 0;
 		}
 
 		.hello {
@@ -59,9 +59,9 @@
 				text-align: right;
 			}
 
-			@include for-phone-only {
-				display: none;
-			}
+			// @include for-phone-only {
+			// 	display: none;
+			// }
 		}
 
 		.ctas {
@@ -69,7 +69,7 @@
 			flex-wrap: wrap;
 			align-items: center;
 			justify-content: center;
-			gap: 10px;
+			gap: 24px;
 			width: 100%;
 		}
 	}

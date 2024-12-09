@@ -14,12 +14,7 @@
 	<div class="projects-container">
 		<div class="three-group-grid">
 			{#each projects as project}
-				<ProjectCard
-					name={project.name}
-					description={project.description}
-					image={project.image}
-					tags={project.tags}
-				/>
+				<ProjectCard {project} />
 			{/each}
 		</div>
 	</div>

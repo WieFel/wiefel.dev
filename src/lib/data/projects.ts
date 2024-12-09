@@ -2,15 +2,6 @@ import type { Project } from "$lib/utils/types";
 
 export default [
   {
-    name: 'This webpage',
-    description:
-      'My portfolio page showing the projects I made and the work experience that I have.',
-    image: 'images/sample-image.png',
-    tags: [{ label: 'Web Page', color: 'primary' }, { label: '2024', color: 'secondary' }],
-    type: 'Web App',
-    year: '2024',
-  },
-  {
     name: 'This Person Does Not Exist',
     description:
       'Flutter app reproducing the web page thispersondoesnotexist.com, which generates not existing people using AI.',
@@ -18,6 +9,8 @@ export default [
     tags: [{ label: 'App', color: 'primary' }, { label: '2024', color: 'secondary' }],
     type: 'Flutter package',
     year: '2023',
+    playStore: 'https://play.google.com/store/apps/details?id=dev.wiefel.thispersondoesnotexist',
+    appStore: 'https://apps.apple.com/us/app/this-person-does-not-exist/id6476830001'
   },
   {
     name: 'Gamper-Schwienbacher',
@@ -27,6 +20,7 @@ export default [
     tags: [{ label: 'Web Page', color: 'primary' }, { label: '2023', color: 'secondary' }],
     type: 'Flutter package',
     year: '2023',
+    webpage: 'https://gamper-schwienbacher.com'
   },
   {
     name: 'TinyColor 2',
@@ -36,6 +30,8 @@ export default [
     tags: [{ label: 'Flutter Package', color: 'primary' }, { label: '2021', color: 'secondary' }],
     type: 'Flutter package',
     year: '2021',
+    github: 'https://github.com/TinyCommunity/tinycolor2',
+    pubDev: 'https://pub.dev/packages/tinycolor2',
   },
   {
     name: 'Number Paginator',
@@ -45,6 +41,8 @@ export default [
     tags: [{ label: 'Flutter Package', color: 'primary' }, { label: '2021', color: 'secondary' }],
     type: 'Flutter package',
     year: '2021',
+    github: 'https://github.com/WieFel/number_paginator',
+    pubDev: 'https://pub.dev/packages/number_paginator'
   },
   {
     name: 'HSV Color Pickers',
@@ -54,6 +52,8 @@ export default [
     tags: [{ label: 'Flutter Package', color: 'primary' }, { label: '2021', color: 'secondary' }],
     type: 'Flutter package',
     year: '2021',
+    github: 'https://github.com/WieFel/hsv_color_pickers',
+    pubDev: 'https://pub.dev/packages/hsv_color_pickers'
   },
   {
     name: 'Gallerize',
@@ -63,6 +63,8 @@ export default [
     tags: [{ label: 'Flutter Package', color: 'primary' }, { label: '2020', color: 'secondary' }],
     type: 'Flutter package',
     year: '2020',
+    github: 'https://github.com/WieFel/gallerize',
+    pubDev: 'https://pub.dev/packages/gallerize'
   },
   {
     name: 'GWL Webpage',
@@ -72,6 +74,7 @@ export default [
     tags: [{ label: 'Web Page', color: 'primary' }, { label: '2020', color: 'secondary' }],
     type: 'Webpage',
     year: '2020',
+    webpage: 'https://gwl.it'
   },
   {
     name: 'Bleckl',
@@ -81,6 +84,8 @@ export default [
     tags: [{ label: 'App', color: 'primary' }, { label: '2020', color: 'secondary' }],
     type: 'App',
     year: '2020',
+    playStore: 'https://play.google.com/store/apps/details?id=wattenzaehler.activities',
+    appStore: 'https://apps.apple.com/us/app/bleckl/id1479732838'
   },
   {
     name: 'Backdrop',
@@ -90,6 +95,8 @@ export default [
     tags: [{ label: 'Flutter Package', color: 'primary' }, { label: '2019', color: 'secondary' }],
     type: 'Flutter package',
     year: '2019',
+    github: 'https://github.com/fluttercommunity/backdrop',
+    pubDev: 'https://pub.dev/packages/backdrop'
   },
   {
     name: 'Lyrics-Genre-Classification',
@@ -99,6 +106,7 @@ export default [
     tags: [{ label: 'Seminar Project', color: 'primary' }, { label: '2019', color: 'secondary' }],
     type: 'Seminar Project',
     year: '2019',
+    github: 'https://github.com/WieFel/LyricsGenreClassification'
   },
   {
     name: 'VerkehrsInfo Radio 2000',
@@ -108,6 +116,7 @@ export default [
     tags: [{ label: 'App', color: 'primary' }, { label: '2014', color: 'secondary' }],
     type: 'App',
     year: '2014',
+    playStore: 'https://play.google.com/store/apps/details?id=com.main.verkehrsinfo'
   },
   {
     name: 'dieAntenne - Sportergebnisse',
@@ -117,6 +126,7 @@ export default [
     tags: [{ label: 'App', color: 'primary' }, { label: '2013', color: 'secondary' }],
     type: 'App',
     year: '2013',
+    playStore: 'https://play.google.com/store/apps/details?id=com.main.antenne'
   },
   {
     name: 'WattenZähler',
@@ -126,5 +136,6 @@ export default [
     tags: [{ label: 'App', color: 'primary' }, { label: '2012', color: 'secondary' }],
     type: 'App',
     year: 2012,
+    playStore: 'https://play.google.com/store/apps/details?id=wattenzaehler.activities'
   },
 ] as Project[];

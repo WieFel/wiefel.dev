@@ -1,29 +1,78 @@
 <script lang="ts">
 	import Card from '$lib/components/atoms/Card.svelte';
 	import Tag from '$lib/components/atoms/Tag.svelte';
-	import type { TagType } from '$lib/utils/types';
+	import Android from '$lib/icons/android.svelte';
+	import Apple from '$lib/icons/apple.svelte';
+	import Dart from '$lib/icons/dart.svelte';
+	import ExternalLink from '$lib/icons/external-link.svelte';
+	import Github from '$lib/icons/socials/github.svelte';
+	import type { Project, TagType } from '$lib/utils/types';
 	import Image from '../atoms/Image.svelte';
 
-	export let name: string;
-	export let description: string;
-	export let image: string;
-	export let tags: TagType[] | undefined;
+	export let project: Project;
 </script>
 
 <Card additionalClass="project-card">
 	<div class="image" slot="image">
-		<Image src={image} alt="Picture describing the {name} project" />
+		<Image src={project.image} alt="Picture describing the {project.name} project" />
 	</div>
 	<div class="content" slot="content">
 		<div class="title">
-			<span>{name}</span>
+			<span>{project.name}</span>
+			<div class="links">
+				{#if project.github}
+					<a
+						href={project.github}
+						target="_blank"
+						rel="noopener noreferrer"
+						title="Open Source Code"
+					>
+						<Github />
+					</a>
+				{/if}
+				{#if project.playStore}
+					<a
+						href={project.playStore}
+						target="_blank"
+						rel="noopener noreferrer"
+						title="Open on Play Store"
+					>
+						<Android />
+					</a>
+				{/if}
+				{#if project.appStore}
+					<a
+						href={project.appStore}
+						target="_blank"
+						rel="noopener noreferrer"
+						title="Open on Appstore"
+					>
+						<Apple />
+					</a>
+				{/if}
+				{#if project.pubDev}
+					<a
+						href={project.pubDev}
+						target="_blank"
+						rel="noopener noreferrer"
+						title="Open on pub.dev"
+					>
+						<Dart />
+					</a>
+				{/if}
+				{#if project.webpage}
+					<a href={project.webpage} target="_blank" rel="noopener noreferrer" title="Open Webpage">
+						<ExternalLink />
+					</a>
+				{/if}
+			</div>
 		</div>
-		<p>{description}</p>
+		<p>{project.description}</p>
 	</div>
 	<div class="footer" slot="footer">
-		{#if tags && tags.length > 0}
+		{#if project.tags && project.tags.length > 0}
 			<div class="tags">
-				{#each tags as tag}
+				{#each project.tags as tag}
 					<Tag color={tag.color}>{tag.label}</Tag>
 				{/each}
 			</div>
@@ -48,6 +97,24 @@
 		font-size: 1.2rem;
 		font-family: var(--font--title);
 		font-weight: 700;
+	}
+
+	.links {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 15px;
+
+		a {
+			width: 30px;
+			height: 30px;
+			padding: 3px;
+			color: var(--color--secondary);
+
+			&:hover {
+				filter: drop-shadow(0px 0px 3px var(--color--secondary));
+			}
+		}
 	}
 
 	.tags {

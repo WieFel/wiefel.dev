@@ -2,7 +2,6 @@
 	import Card from '$lib/components/atoms/Card.svelte';
 	import Tag from '$lib/components/atoms/Tag.svelte';
 	import type { TagType } from '$lib/utils/types';
-	import TintHighlight from './TintHighlight.svelte';
 
 	export let companySlug: string | undefined = undefined;
 	export let company: string;
@@ -15,7 +14,7 @@
 <Card>
 	<div class="content" slot="content">
 		<p class="title">
-			<TintHighlight color={companySlug}>{company}</TintHighlight>
+			{company}
 		</p>
 		<p>{jobTitle}</p>
 		<p class="note">{timeframe}</p>

@@ -7,11 +7,10 @@
 <section id="about">
 	<div class="info">
 		<h2>
-			This website shows the
-			<SparklingHighlight color="secondary">projects</SparklingHighlight>
-			that I made and my
-			<SparklingHighlight color="secondary">work experience</SparklingHighlight>
-			.
+			Discover the
+			<span class="highlighted">projects</span>
+			I worked on and my
+			<span class="highlighted">work experience</span>
 		</h2>
 		<p>Scroll down to find out more, or follow any of my social media links!</p>
 		<div class="socials">
@@ -19,7 +18,7 @@
 		</div>
 	</div>
 	<div class="image">
-		<Image src="/images/sample-image.png" alt="Sample for the static template" />
+		<Image src="images/logo.png" alt="Logo" />
 	</div>
 </section>
 
@@ -32,7 +31,8 @@
 		grid-template-columns: 500px 250px;
 		align-items: center;
 		justify-content: space-between;
-		padding-bottom: 50px;
+		margin-top: 64px;
+		margin-bottom: 64px;
 
 		@include for-phone-only {
 			grid-template-columns: 1fr;
@@ -79,5 +79,9 @@
 			width: 220px;
 			height: 220px;
 		}
+	}
+
+	.highlighted {
+		color: var(--color--secondary);
 	}
 </style>
