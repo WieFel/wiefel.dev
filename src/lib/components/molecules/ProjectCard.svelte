@@ -6,7 +6,7 @@
 	import Dart from '$lib/icons/dart.svelte';
 	import ExternalLink from '$lib/icons/external-link.svelte';
 	import Github from '$lib/icons/socials/github.svelte';
-	import type { Project, TagType } from '$lib/utils/types';
+	import type { Project } from '$lib/utils/types';
 	import Image from '../atoms/Image.svelte';
 
 	export let project: Project;
