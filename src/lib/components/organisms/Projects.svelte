@@ -9,7 +9,7 @@
 <ContentSection
 	id="projects"
 	title="Projects"
-	description="Here are some of the projects of this template"
+	description="Here are some of the projects I've worked on"
 >
 	<div class="projects-container">
 		<div class="three-group-grid">
