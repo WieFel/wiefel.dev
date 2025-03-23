@@ -2,6 +2,15 @@ import type { Project } from "$lib/utils/types";
 
 export default [
   {
+    name: 'Park Radio',
+    description:
+      'Flutter app for streaming the Argentinian radio channel Park.',
+    image: 'images/projects/park.jpeg',
+    tags: [{ label: 'App', color: 'primary' }, { label: '2025', color: 'secondary' }],
+    playStore: 'https://play.google.com/store/apps/details?id=ar.com.park',
+    appStore: 'https://apps.apple.com/us/app/park-radio/id6741716276'
+  },
+  {
     name: 'This Person Does Not Exist',
     description:
       'Flutter app reproducing the web page thispersondoesnotexist.com, which generates not existing people using AI.',
