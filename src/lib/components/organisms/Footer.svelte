@@ -9,7 +9,7 @@
 		<FooterWave />
 	</div>
 	<div class="content">
-		<div class="copyright">© 2024 Felix Wielander</div>
+		<div class="copyright">© 2025 Felix Wielander</div>
 		<div class="socials">
 			<Socials />
 			<ThemeToggle />
