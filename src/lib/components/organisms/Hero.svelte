@@ -8,8 +8,9 @@
 <section id="hero">
 	<h1 class="hello">Hi, I'm Felix!</h1>
 	<p class="intro">
-		<span class="left">I love to create mobile/web apps,</span>
-		<span class="right">and try out new things with AI.</span>
+		Full-Stack Developer & Open Source Contributor. I build seamless mobile and web experiences
+		using Flutter and AI. Dedicated to clean code, community growth, and pushing the limits of
+		modern tech.
 	</p>
 	<div class="ctas">
 		<Sparkles>
@@ -47,17 +48,11 @@
 
 		.intro {
 			font-weight: 500;
-			font-size: 1.4rem;
-			width: min(100%, 440px);
+			font-size: 18px;
+			width: min(100%, 768px);
 			display: flex;
 			flex-direction: column;
-
-			.left {
-				text-align: left;
-			}
-			.right {
-				text-align: right;
-			}
+			text-align: justify;
 
 			// @include for-phone-only {
 			// 	display: none;

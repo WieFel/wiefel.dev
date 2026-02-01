@@ -11,7 +11,7 @@
 <ContentSection
 	id="experience"
 	title="Work Experience"
-	description="Over the past {yearsOfExperience}+ years, I've worked on a lot of cool projects with great people."
+	description="Over the past {yearsOfExperience}+ years, I've worked on a lot of projects with great people."
 >
 	<div class="grid">
 		{#each entries as entry}

@@ -2,6 +2,15 @@ import type { Project } from "$lib/utils/types";
 
 export default [
   {
+    name: 'open_with_app',
+    description:
+      'Maintainer of open_with_app, a Flutter package for opening specific file types with an app.',
+    image: 'images/projects/flutter.jpeg',
+    tags: [{ label: 'Flutter Package', color: 'primary' }, { label: '2025', color: 'secondary' }],
+    github: 'https://github.com/WieFel/open_with_app',
+    pubDev: 'https://pub.dev/packages/open_with_app',
+  },
+  {
     name: 'Park Radio',
     description:
       'Flutter app for streaming the Argentinian radio channel Park.',
