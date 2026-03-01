@@ -46,17 +46,9 @@ export type WorkExperience = {
   tags: TagType[]
 }
 
-export type BlogPost = {
-  tags: string[],
-  keywords: string[],
-  hidden: boolean,
-  slug: string,
+export type BlogArticle = {
   title: string,
-  date: string,
-  updated: string,
-  excerpt: string,
-  html: string | undefined,
-  readingTime: string,
-  relatedPosts: BlogPost[],
-  coverImage: string | undefined
+  url: string,
+  description?: string,
+  date?: string,
 }

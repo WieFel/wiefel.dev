@@ -1,13 +1,13 @@
 import projects from '$lib/data/projects';
 import workExperience, { yearsOfExperience } from '$lib/data/work-experience';
-import { filteredPosts } from '$lib/data/blog-posts';
+import blogArticles from '$lib/data/blog-articles';
 
 export async function load() {
-  const posts = filteredPosts.slice(0, 4);
+  const articles = blogArticles.slice(0, 4);
 
   return {
     projects,
-    posts,
+    blogArticles: articles,
     yearsOfExperience,
     workExperience,
   };

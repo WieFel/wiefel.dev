@@ -1,27 +1,36 @@
 <script lang="ts">
-	import BlogPostCard from '$lib/components/molecules/BlogPostCard.svelte';
+	import Card from '$lib/components/atoms/Card.svelte';
 	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
-	import type { BlogPost } from '$lib/utils/types';
+	import type { BlogArticle } from '$lib/utils/types';
+	import dateformat from 'dateformat';
 
 	export let data: {
-		posts: BlogPost[];
+		articles: BlogArticle[];
 	};
 
-	let { posts } = data;
+	let { articles } = data;
 </script>
 
 <div class="container">
 	<ContentSection title="All Blog Posts">
 		<div class="grid">
-			{#each posts as post}
-				<BlogPostCard
-					title={post.title}
-					coverImage={post.coverImage}
-					excerpt={post.excerpt}
-					readingTime={post.readingTime}
-					slug={post.slug}
-					tags={post.tags}
-				/>
+			{#each articles as article}
+				<Card
+					href={article.url}
+					target="_blank"
+					rel="noopener noreferrer"
+					additionalClass="blog-article-link"
+				>
+					<div class="content" slot="content">
+						<p class="title">{article.title}</p>
+						{#if article.date}
+							<p class="date">{dateformat(article.date, 'dd mmm yyyy')}</p>
+						{/if}
+						{#if article.description}
+							<p class="text">{article.description}</p>
+						{/if}
+					</div>
+				</Card>
 			{/each}
 		</div>
 	</ContentSection>
@@ -64,5 +73,24 @@
 				grid-column: span 2;
 			}
 		}
+	}
+
+	.title {
+		font-size: 1.2rem;
+		font-family: var(--font--title);
+		font-weight: 700;
+	}
+
+	.date {
+		font-size: 0.8rem;
+		color: rgba(var(--color--text-rgb), 0.7);
+		margin-top: 4px;
+	}
+
+	.text {
+		margin-top: 5px;
+		font-size: 0.9rem;
+		text-align: justify;
+		color: rgba(var(--color--text-rgb), 0.9);
 	}
 </style>
