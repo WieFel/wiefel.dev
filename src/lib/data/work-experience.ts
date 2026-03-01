@@ -9,7 +9,7 @@ export default [
     current: false,
     location: 'Málaga, Spain',
     description: 'Working as a freelance full stack engineer on projects for Netscrapers/AIoT Solutions. Working on app projects and on AI topics.',
-    tags: [{ label: 'Angular', color: 'primary' }, { label: 'Python', color: 'secondary' }, { label: 'Flutter', color: 'primary' }, { label: 'Dart', color: 'secondary' }],
+    tags: [{ label: 'Angular', color: 'primary' }, { label: 'React', color: 'primary' }, { label: 'Python', color: 'secondary' }, { label: 'Flutter', color: 'primary' }, { label: 'Dart', color: 'secondary' }, { label: 'C#', color: 'secondary' }],
   },
   {
     companySlug: 'secondary',
