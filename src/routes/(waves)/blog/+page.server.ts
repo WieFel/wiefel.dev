@@ -1,7 +1,7 @@
-import { filteredPosts } from '$lib/data/blog-posts';
+import blogArticles from '$lib/data/blog-articles';
 
 export async function load() {
   return {
-    posts: filteredPosts
+    articles: blogArticles
   };
 }
