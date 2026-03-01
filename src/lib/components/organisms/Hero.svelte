@@ -52,7 +52,7 @@
 			width: min(100%, 768px);
 			display: flex;
 			flex-direction: column;
-			text-align: justify;
+			text-align: center;
 
 			// @include for-phone-only {
 			// 	display: none;
