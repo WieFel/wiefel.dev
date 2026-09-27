@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Hero from '$lib/components/organisms/Hero.svelte';
-	import About from '$lib/components/organisms/About.svelte';
 	import RecentPosts from '$lib/components/organisms/RecentPosts.svelte';
 	import Services from '$lib/components/organisms/Services.svelte';
 	import Projects from '$lib/components/organisms/Projects.svelte';
@@ -17,7 +16,6 @@
 
 <div class="container">
 	<Hero />
-	<About />
 	<Services {services} />
 	<Projects {projects} />
 	<RecentPosts articles={blogArticles} />

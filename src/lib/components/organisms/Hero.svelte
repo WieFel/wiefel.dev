@@ -1,8 +1,5 @@
 <script>
-	import ProjectsIcon from '$lib/icons/projects.svelte';
-	import BlogIcon from '$lib/icons/blog.svelte';
-	import Button from '$lib/components/atoms/Button.svelte';
-	import Sparkles from '../atoms/Sparkles.svelte';
+	import Socials from '$lib/components/molecules/Socials.svelte';
 </script>
 
 <section id="hero">
@@ -12,17 +9,14 @@
 		using Flutter and AI. Dedicated to clean code, community growth, and pushing the limits of
 		modern tech.
 	</p>
-	<div class="ctas">
-		<Sparkles>
-			<Button href="#projects">
-				<ProjectsIcon slot="icon" />
-				Projects
-			</Button>
-		</Sparkles>
-		<Button color="primary" href="#recent-posts">
-			<BlogIcon slot="icon" />
-			Blog
-		</Button>
+	<p class="discover">
+		Discover the
+		<a href="#projects">projects</a>
+		I worked on and my
+		<a href="#recent-posts">recent posts</a>
+	</p>
+	<div class="socials">
+		<Socials />
 	</div>
 </section>
 
@@ -50,22 +44,29 @@
 			font-weight: 500;
 			font-size: 18px;
 			width: min(100%, 768px);
-			display: flex;
-			flex-direction: column;
 			text-align: center;
-
-			// @include for-phone-only {
-			// 	display: none;
-			// }
 		}
 
-		.ctas {
+		.discover {
+			font-size: 1.15rem;
+			font-weight: 600;
+			text-align: center;
+			width: min(100%, 768px);
+
+			a {
+				color: var(--color--secondary);
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		.socials {
 			display: flex;
-			flex-wrap: wrap;
 			align-items: center;
 			justify-content: center;
-			gap: 24px;
-			width: 100%;
 		}
 	}
 </style>
