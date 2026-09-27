@@ -35,17 +35,6 @@ export type Project = {
   pubDev?: string,
 }
 
-export type WorkExperience = {
-  companySlug: string,
-  company: string,
-  jobTitle: string,
-  timeframe: string,
-  current?: boolean,
-  location: string,
-  description: string,
-  tags: TagType[]
-}
-
 export type BlogArticle = {
   title: string,
   url: string,

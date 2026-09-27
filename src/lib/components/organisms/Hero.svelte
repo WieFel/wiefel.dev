@@ -1,6 +1,6 @@
 <script>
 	import ProjectsIcon from '$lib/icons/projects.svelte';
-	import ExperienceIcon from '$lib/icons/experience.svelte';
+	import BlogIcon from '$lib/icons/blog.svelte';
 	import Button from '$lib/components/atoms/Button.svelte';
 	import Sparkles from '../atoms/Sparkles.svelte';
 </script>
@@ -19,9 +19,9 @@
 				Projects
 			</Button>
 		</Sparkles>
-		<Button color="primary" href="#experience">
-			<ExperienceIcon slot="icon" />
-			Experience
+		<Button color="primary" href="#recent-posts">
+			<BlogIcon slot="icon" />
+			Blog
 		</Button>
 	</div>
 </section>

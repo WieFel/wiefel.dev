@@ -1,5 +1,4 @@
 import projects from '$lib/data/projects';
-import workExperience, { yearsOfExperience } from '$lib/data/work-experience';
 import blogArticles from '$lib/data/blog-articles';
 
 export async function load() {
@@ -8,7 +7,5 @@ export async function load() {
   return {
     projects,
     blogArticles: articles,
-    yearsOfExperience,
-    workExperience,
   };
 }

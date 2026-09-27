@@ -10,7 +10,7 @@
 			Discover the
 			<span class="highlighted">projects</span>
 			I worked on and my
-			<span class="highlighted">work experience</span>
+			<span class="highlighted">recent posts</span>
 		</h2>
 		<p>Scroll down to find out more, or follow any of my social media links!</p>
 		<div class="socials">
