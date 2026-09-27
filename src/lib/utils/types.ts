@@ -36,6 +36,12 @@ export type Project = {
   pubDev?: string,
 }
 
+export type Service = {
+  title: string,
+  description: string,
+  tags: TagType[],
+}
+
 export type BlogArticle = {
   title: string,
   url: string,
