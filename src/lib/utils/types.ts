@@ -21,13 +21,14 @@ export type Link = {
 
 }
 
+export type ProjectCategory = 'project' | 'open-source';
+
 export type Project = {
   name: string,
   description: string,
   image: string,
   tags: TagType[],
-  year: number,
-  type: string,
+  category: ProjectCategory,
   webpage?: string,
   github?: string,
   playStore?: string,

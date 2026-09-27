@@ -4,12 +4,29 @@
 	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
 
 	export let projects: Project[];
+
+	$: apps = projects.filter((project) => project.category === 'project');
+	$: openSource = projects.filter((project) => project.category === 'open-source');
 </script>
 
-<ContentSection id="projects" title="Projects" description="Here are the projects I've worked on">
+<ContentSection id="projects" title="Projects" description="Apps, websites, and other things I've built">
 	<div class="projects-container">
 		<div class="three-group-grid">
-			{#each projects as project}
+			{#each apps as project}
+				<ProjectCard {project} />
+			{/each}
+		</div>
+	</div>
+</ContentSection>
+
+<ContentSection
+	id="open-source"
+	title="Open Source"
+	description="Flutter packages and community work I maintain or contribute to"
+>
+	<div class="projects-container">
+		<div class="three-group-grid">
+			{#each openSource as project}
 				<ProjectCard {project} />
 			{/each}
 		</div>
