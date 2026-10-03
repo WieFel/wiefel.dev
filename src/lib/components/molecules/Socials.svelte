@@ -5,20 +5,20 @@
 
 <div class="socials">
 	<a
-		href="https://github.com/WieFel"
-		target="_blank"
-		rel="noopener noreferrer"
-		title="See my GitHub profile"
-	>
-		<GitHubIcon />
-	</a>
-	<a
 		href="https://www.linkedin.com/in/felixwielander/"
 		target="_blank"
 		rel="noopener noreferrer"
 		title="Connect on LinkedIn"
 	>
 		<LinkedInIcon />
+	</a>
+	<a
+		href="https://github.com/WieFel"
+		target="_blank"
+		rel="noopener noreferrer"
+		title="See my GitHub profile"
+	>
+		<GitHubIcon />
 	</a>
 </div>
 

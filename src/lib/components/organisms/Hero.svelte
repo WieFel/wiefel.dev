@@ -7,15 +7,14 @@
 	<div class="container">
 		<h1 class="hello">Hi, I'm Felix!</h1>
 		<p class="intro">
-			Full-Stack Developer & Open Source Contributor. I build seamless mobile and web experiences
-			using Flutter and AI. Dedicated to clean code, community growth, and pushing the limits of
-			modern tech.
+			Full-Stack Developer & Open Source Contributor. Offering seamless mobile and web experiences
+			using Flutter and AI. Dedicated to simplicity, maintainability and clean code.
 		</p>
 		<p class="discover">
-			Discover the
+			Discover my
 			<a href="#projects">projects</a>
-			I worked on and my
-			<a href="#recent-posts">recent posts</a>
+			and
+			<a href="#recent-posts">blog posts</a>
 		</p>
 		<div class="socials">
 			<Socials />
