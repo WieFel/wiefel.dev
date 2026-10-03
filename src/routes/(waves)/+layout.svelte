@@ -1,9 +1,11 @@
 <script>
-	import Waves from '$lib/components/organisms/Waves.svelte';
 	import Header from '$lib/components/organisms/Header.svelte';
 	import Footer from '$lib/components/organisms/Footer.svelte';
 
+	import { page } from '$app/stores';
 	import { description, image, keywords, title, siteBaseUrl } from '$lib/data/meta';
+
+	$: isHome = $page.url.pathname === '/';
 </script>
 
 <svelte:head>
@@ -24,9 +26,7 @@
 	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
-<Waves />
-
-<Header />
+<Header showBackground={!isHome} />
 
 <main>
 	<slot />

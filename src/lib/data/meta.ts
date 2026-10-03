@@ -15,7 +15,7 @@ export const keywords = [
 	'Machine Learning'
 ];
 
-export const description = "Project portfolio and blog.";
+export const description = 'Project portfolio.';
 
 export const title = 'Felix Wielander';
 

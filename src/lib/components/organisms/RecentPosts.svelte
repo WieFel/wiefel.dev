@@ -2,7 +2,6 @@
 	import Card from '$lib/components/atoms/Card.svelte';
 	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
 	import type { BlogArticle } from '$lib/utils/types';
-	import Button from '$lib/components/atoms/Button.svelte';
 	import dateformat from 'dateformat';
 
 	export let articles: BlogArticle[];
@@ -14,16 +13,12 @@
 	description="This section shows the blog posts I wrote on Medium"
 	align="left"
 >
-	<div slot="button">
-		<Button href="/blog">View All</Button>
-	</div>
 	<div class="grid">
 		{#each articles as article}
 			<Card
 				href={article.url}
 				target="_blank"
 				rel="noopener noreferrer"
-				additionalClass="blog-article-link"
 			>
 				<div class="content" slot="content">
 					<p class="title">{article.title}</p>

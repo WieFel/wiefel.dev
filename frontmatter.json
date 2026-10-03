@@ -63,11 +63,5 @@
 	],
 	"frontMatter.framework.id": "other",
 	"frontMatter.content.publicFolder": "",
-	"frontMatter.content.pageFolders": [
-		{
-			"title": "posts",
-			"path": "[[workspace]]/src/routes/(blog-article)",
-      "filePrefix": null
-		}
-	]
+	"frontMatter.content.pageFolders": []
 }

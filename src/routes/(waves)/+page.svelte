@@ -14,8 +14,9 @@
 	let { services, projects, blogArticles } = data;
 </script>
 
+<Hero />
+
 <div class="container">
-	<Hero />
 	<Services {services} />
 	<Projects {projects} />
 	<RecentPosts articles={blogArticles} />
