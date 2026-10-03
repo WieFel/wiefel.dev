@@ -118,15 +118,6 @@ export default [
     pubDev: 'https://pub.dev/packages/backdrop'
   },
   {
-    name: 'Lyrics-Genre-Classification',
-    description:
-      'TUM seminar project for classifying the genre of a music track only by looking at its lyrics text, using natural language processing (NLP).',
-    image: 'images/projects/deep-learning.jpeg',
-    category: 'project',
-    tags: [{ label: 'Seminar Project', color: 'primary' }, { label: '2019', color: 'secondary' }],
-    github: 'https://github.com/WieFel/LyricsGenreClassification'
-  },
-  {
     name: 'VerkehrsInfo Radio 2000',
     description:
       'Native Android app for traffic announcements in South Tyrol. Supported by the traffic reporting centre. Powered by Radio 2000.',
