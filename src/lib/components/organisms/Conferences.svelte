@@ -13,19 +13,23 @@
 >
 	<div class="marquee" aria-label="Conferences attended">
 		<div class="marquee-track">
-			{#each conferences as conference, i (i)}
-				<ConferenceCard {conference} />
-			{/each}
-			{#each conferences as conference, i (`dup-${i}`)}
-				<div class="marquee-duplicate" aria-hidden="true">
+			<div class="marquee-group">
+				{#each conferences as conference, i (i)}
 					<ConferenceCard {conference} />
-				</div>
-			{/each}
+				{/each}
+			</div>
+			<div class="marquee-group" aria-hidden="true">
+				{#each conferences as conference, i (`dup-${i}`)}
+					<ConferenceCard {conference} />
+				{/each}
+			</div>
 		</div>
 	</div>
 </ContentSection>
 
 <style lang="scss">
+	$marquee-gap: 48px;
+
 	.marquee {
 		width: 100%;
 		overflow: hidden;
@@ -34,27 +38,31 @@
 
 	.marquee-track {
 		display: flex;
-		align-items: flex-start;
-		gap: 48px;
 		width: max-content;
 		padding: 8px 0;
 		animation: marquee-scroll 35s linear infinite;
+		will-change: transform;
 
 		&:hover {
 			animation-play-state: paused;
 		}
 	}
 
-	.marquee-duplicate {
-		display: contents;
+	.marquee-group {
+		display: flex;
+		align-items: flex-start;
+		flex: 0 0 auto;
+		gap: $marquee-gap;
+		// Trailing space matches inter-item gap so -50% aligns with the duplicate set.
+		padding-right: $marquee-gap;
 	}
 
 	@keyframes marquee-scroll {
 		from {
-			transform: translateX(0);
+			transform: translate3d(0, 0, 0);
 		}
 		to {
-			transform: translateX(-50%);
+			transform: translate3d(-50%, 0, 0);
 		}
 	}
 

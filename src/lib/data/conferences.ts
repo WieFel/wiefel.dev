@@ -17,13 +17,13 @@ export default [
 		image: 'images/conferences/upscale_conf.png',
 		title: 'Upscale Conf 2025',
 		place: 'Málaga, ES',
-		url: 'https://upscaleconf.com',
+		url: 'https://www.upscaleconf.com',
 	},
 	{
 		image: 'images/conferences/open_south_code.png',
 		title: 'OpenSouthCode 2025',
 		place: 'Málaga, ES',
-		url: 'https://opensouthcode.org',
+		url: 'https://www.opensouthcode.org',
 	},
 	{
 		image: 'images/conferences/google_io_2024.png',
@@ -35,7 +35,7 @@ export default [
 		image: 'images/conferences/upscale_conf.png',
 		title: 'Upscale Conf 2024',
 		place: 'Málaga, ES',
-		url: 'https://upscaleconf.com',
+		url: 'https://www.upscaleconf.com',
 	},
 	{
 		image: 'images/conferences/fluttercon.png',
@@ -47,7 +47,7 @@ export default [
 		image: 'images/conferences/open_south_code.png',
 		title: 'OpenSouthCode 2024',
 		place: 'Málaga, ES',
-		url: 'https://opensouthcode.org',
+		url: 'https://www.opensouthcode.org',
 	},
 	{
 		image: 'images/conferences/fluttercon.png',
@@ -59,6 +59,6 @@ export default [
 		image: 'images/conferences/open_south_code.png',
 		title: 'OpenSouthCode 2023',
 		place: 'Málaga, ES',
-		url: 'https://opensouthcode.org',
+		url: 'https://www.opensouthcode.org',
 	},
 ] as Conference[];
