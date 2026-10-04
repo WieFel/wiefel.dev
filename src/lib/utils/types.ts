@@ -46,6 +46,7 @@ export type Conference = {
   image: string,
   title: string,
   place: string,
+  url: string,
 }
 
 export type BlogArticle = {

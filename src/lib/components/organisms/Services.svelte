@@ -9,7 +9,7 @@
 <ContentSection
 	id="services"
 	title="Services"
-	description="Freelance work I offer — from mobile apps to open source and AI features"
+	description="Freelance work I offer — from mobile apps to open source and AI"
 >
 	<div class="grid">
 		{#each services as service}

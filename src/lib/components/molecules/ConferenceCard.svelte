@@ -9,7 +9,14 @@
 
 <div class="conference-item">
 	<div class="logo">
-		<Image src={conference.image} {alt} />
+		<a
+			href={conference.url}
+			target="_blank"
+			rel="noopener noreferrer"
+			aria-label="Visit {conference.title} website"
+		>
+			<Image src={conference.image} {alt} />
+		</a>
 	</div>
 	{#if conference.title}
 		<p class="title">{conference.title}</p>
@@ -37,6 +44,14 @@
 		align-items: center;
 		justify-content: center;
 		padding: 0 4px;
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+		}
 
 		:global(img) {
 			max-width: 100%;
