@@ -42,6 +42,12 @@ export type Service = {
   tags: TagType[],
 }
 
+export type Conference = {
+  image: string,
+  title: string,
+  place: string,
+}
+
 export type BlogArticle = {
   title: string,
   url: string,
