@@ -2,13 +2,13 @@ import type { Service } from "$lib/utils/types";
 
 export default [
   {
-    title: 'Flutter App Development',
+    title: 'Mobile App Development',
     description:
-      'Cross-platform iOS and Android apps built with Flutter — from idea and architecture to store release and beyond.',
+      'Cross-platform Android & iOS apps built with Flutter — from idea and architecture to store release and beyond.',
     tags: [
       { label: 'Flutter', color: 'primary' },
-      { label: 'iOS', color: 'secondary' },
       { label: 'Android', color: 'secondary' },
+      { label: 'iOS', color: 'secondary' },
     ],
   },
   {
@@ -16,8 +16,9 @@ export default [
     description:
       'Modern websites and web apps with a focus on clean UX, performance, and maintainable code.',
     tags: [
-      { label: 'Web', color: 'primary' },
-      { label: 'Frontend', color: 'secondary' },
+      { label: 'Vue.js', color: 'primary' },
+      { label: 'React', color: 'primary' },
+      { label: 'Angular', color: 'primary' },
     ],
   },
   {

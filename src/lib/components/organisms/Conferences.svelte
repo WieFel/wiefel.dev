@@ -8,8 +8,8 @@
 
 <ContentSection
 	id="conferences"
-	title="Conferences"
-	description="Events and conferences I've attended"
+	title="Attended Conferences"
+	description="Always growing and learning from the best in the industry"
 >
 	<div class="marquee" aria-label="Conferences attended">
 		<div class="marquee-track">

@@ -9,7 +9,11 @@
 	$: openSource = projects.filter((project) => project.category === 'open-source');
 </script>
 
-<ContentSection id="projects" title="Projects" description="Apps, websites, and other things I've built">
+<ContentSection
+	id="projects"
+	title="Projects"
+	description="Apps, websites, and other projects I've created"
+>
 	<div class="projects-container">
 		<div class="three-group-grid">
 			{#each apps as project}

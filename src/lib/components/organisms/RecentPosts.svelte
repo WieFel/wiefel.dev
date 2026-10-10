@@ -10,16 +10,12 @@
 <ContentSection
 	id="recent-posts"
 	title="Blog posts"
-	description="This section shows the blog posts I wrote on Medium"
+	description="The blog posts I published on Medium"
 	align="left"
 >
 	<div class="grid">
 		{#each articles as article}
-			<Card
-				href={article.url}
-				target="_blank"
-				rel="noopener noreferrer"
-			>
+			<Card href={article.url} target="_blank" rel="noopener noreferrer">
 				<div class="content" slot="content">
 					<p class="title">{article.title}</p>
 					{#if article.date}
