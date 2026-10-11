@@ -9,7 +9,7 @@
 <ContentSection
 	id="conferences"
 	title="Attended Conferences"
-	description="Always growing and meeting the best in the industry"
+	description="Growing with the community and exchanging ideas with leaders in the field."
 >
 	<div class="marquee" aria-label="Conferences attended">
 		<div class="marquee-track">

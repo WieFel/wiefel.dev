@@ -4,26 +4,26 @@ export default [
   {
     title: 'Mobile App Development',
     description:
-      'Cross-platform Android & iOS apps built with Flutter — from idea and architecture to a product ready to ship, and maintenance over time.',
+      'Cross-platform Android and iOS apps with Flutter — from architecture to a shippable product, including ongoing maintenance.',
   },
   {
     title: 'Web Development',
     description:
-      'Modern websites and web apps with a focus on clean UX, performance, and maintainable code — including ongoing maintenance.',
+      'Websites and web apps with a focus on clean UX, performance, and maintainable code.',
   },
   {
     title: 'App Store Publishing',
     description:
-      'Play Store and App Store releases — signing, listings, screenshots, review, and updates.',
+      'Google Play and App Store releases — signing, listings, screenshots, submission, and review.',
   },
   {
     title: 'Web Deployment',
     description:
-      'Hosting of sites on a custom domain — DNS, HTTPS, and a setup you can redeploy without starting over.',
+      'Hosting on a custom domain — DNS setup and a deployment process for publishing changes.',
   },
   {
     title: 'Consulting',
     description:
-      'Helping freelancers or companies build apps and websites more efficiently, and supporting them in the publishing and deployment process.',
+      'Support for freelancers and companies — consulting on building Flutter apps (architecture, state management, release process, etc.), on websites and web deployment, and on advertising.',
   },
 ] as Service[];

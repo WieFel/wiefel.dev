@@ -12,7 +12,7 @@
 <ContentSection
 	id="projects"
 	title="Projects"
-	description="Apps, websites, and other projects I've created"
+	description="Apps, websites, and other projects I've built"
 >
 	<div class="projects-container">
 		<div class="three-group-grid">
@@ -26,7 +26,7 @@
 <ContentSection
 	id="open-source"
 	title="Open Source"
-	description="Flutter packages and community work I maintain or contribute to"
+	description="Flutter packages I maintain and contribute to"
 >
 	<div class="projects-container">
 		<div class="three-group-grid">
