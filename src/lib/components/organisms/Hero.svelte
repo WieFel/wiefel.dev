@@ -7,12 +7,12 @@
 	<div class="container">
 		<h1 class="hello">Hi, I'm Felix!</h1>
 		<p class="intro">
-			Full-Stack Software Engineer, Open Source Contributor & Event Organizer. Implementing seamless
-			mobile and web experiences using Flutter and AI. Dedicated to simplicity, maintainability and
-			clean code.
+			Full-stack software engineer and open source contributor.
+			<br />
+			I work on mobile and web products and organize events to bring developers together.
 		</p>
 		<p class="discover">
-			Discover my
+			See my
 			<a href="#services">services</a>
 			and
 			<a href="#projects">projects</a>
