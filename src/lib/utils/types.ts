@@ -39,7 +39,6 @@ export type Project = {
 export type Service = {
   title: string,
   description: string,
-  tags: TagType[],
 }
 
 export type Conference = {
