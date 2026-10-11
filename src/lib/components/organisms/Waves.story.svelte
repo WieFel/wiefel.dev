@@ -7,5 +7,14 @@
 </script>
 
 <Hst.Story title="Organisms/Waves" layout={{ type: 'single', iframe: true }}>
-	<Waves />
+	<div class="preview">
+		<Waves />
+	</div>
 </Hst.Story>
+
+<style>
+	.preview {
+		background: linear-gradient(60deg, var(--color--waves-start) 0%, var(--color--waves-end) 100%);
+		padding-top: 80px;
+	}
+</style>

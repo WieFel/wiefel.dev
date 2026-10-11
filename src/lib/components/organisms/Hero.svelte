@@ -1,45 +1,71 @@
 <script>
-	import ProjectsIcon from '$lib/icons/projects.svelte';
-	import ExperienceIcon from '$lib/icons/experience.svelte';
-	import Button from '$lib/components/atoms/Button.svelte';
-	import Sparkles from '../atoms/Sparkles.svelte';
+	import Socials from '$lib/components/molecules/Socials.svelte';
+	import Waves from '$lib/components/organisms/Waves.svelte';
 </script>
 
 <section id="hero">
-	<h1 class="hello">Hi, I'm Felix!</h1>
-	<p class="intro">
-		Full-Stack Developer & Open Source Contributor. I build seamless mobile and web experiences
-		using Flutter and AI. Dedicated to clean code, community growth, and pushing the limits of
-		modern tech.
-	</p>
-	<div class="ctas">
-		<Sparkles>
-			<Button href="#projects">
-				<ProjectsIcon slot="icon" />
-				Projects
-			</Button>
-		</Sparkles>
-		<Button color="primary" href="#experience">
-			<ExperienceIcon slot="icon" />
-			Experience
-		</Button>
+	<div class="container">
+		<h1 class="hello">Hi, I'm Felix!</h1>
+		<p class="intro">
+			Full-stack software engineer and open source contributor.
+			<br />
+			I work on mobile and web products and organize events to bring developers together.
+		</p>
+		<p class="discover">
+			See my
+			<a href="#services">services</a>
+			and
+			<a href="#projects">projects</a>
+		</p>
+		<div class="socials">
+			<Socials />
+		</div>
 	</div>
+	<Waves />
 </section>
 
 <style lang="scss">
 	@import '$lib/scss/breakpoints.scss';
 
 	#hero {
+		position: relative;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 32px;
-		position: relative;
-		padding: 96px 0;
 
-		@include for-phone-only {
-			padding: 64px 0;
+		&::before {
+			content: '';
+			position: absolute;
+			top: -10rem;
+			bottom: 0;
+			left: 50%;
+			width: 100vw;
+			transform: translateX(-50%);
+			background: linear-gradient(
+				60deg,
+				var(--color--waves-start) 0%,
+				var(--color--waves-end) 100%
+			);
+		}
+
+		.container,
+		:global(.waves) {
+			position: relative;
+			z-index: 1;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 32px;
+			padding-top: 96px;
+			padding-bottom: 96px;
+
+			@include for-phone-only {
+				padding-top: 64px;
+				padding-bottom: 64px;
+			}
 		}
 
 		.hello {
@@ -50,22 +76,29 @@
 			font-weight: 500;
 			font-size: 18px;
 			width: min(100%, 768px);
-			display: flex;
-			flex-direction: column;
 			text-align: center;
-
-			// @include for-phone-only {
-			// 	display: none;
-			// }
 		}
 
-		.ctas {
+		.discover {
+			font-size: 1.15rem;
+			font-weight: 600;
+			text-align: center;
+			width: min(100%, 768px);
+
+			a {
+				color: var(--color--secondary);
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		.socials {
 			display: flex;
-			flex-wrap: wrap;
 			align-items: center;
 			justify-content: center;
-			gap: 24px;
-			width: 100%;
 		}
 	}
 </style>

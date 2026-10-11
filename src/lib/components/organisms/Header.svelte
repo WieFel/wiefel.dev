@@ -21,6 +21,7 @@
 
 	header {
 		position: relative;
+		z-index: 1;
 		padding: 30px 0;
 
 		@include for-phone-only {

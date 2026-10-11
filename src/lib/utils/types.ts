@@ -21,13 +21,14 @@ export type Link = {
 
 }
 
+export type ProjectCategory = 'project' | 'open-source';
+
 export type Project = {
   name: string,
   description: string,
   image: string,
   tags: TagType[],
-  year: number,
-  type: string,
+  category: ProjectCategory,
   webpage?: string,
   github?: string,
   playStore?: string,
@@ -35,15 +36,16 @@ export type Project = {
   pubDev?: string,
 }
 
-export type WorkExperience = {
-  companySlug: string,
-  company: string,
-  jobTitle: string,
-  timeframe: string,
-  current?: boolean,
-  location: string,
+export type Service = {
+  title: string,
   description: string,
-  tags: TagType[]
+}
+
+export type Conference = {
+  image: string,
+  title: string,
+  place: string,
+  url: string,
 }
 
 export type BlogArticle = {

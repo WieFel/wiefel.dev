@@ -1,25 +1,26 @@
 <script lang="ts">
 	import Hero from '$lib/components/organisms/Hero.svelte';
-	import About from '$lib/components/organisms/About.svelte';
 	import RecentPosts from '$lib/components/organisms/RecentPosts.svelte';
+	import Services from '$lib/components/organisms/Services.svelte';
+	import Conferences from '$lib/components/organisms/Conferences.svelte';
 	import Projects from '$lib/components/organisms/Projects.svelte';
-	import type { Project, BlogArticle, WorkExperience } from '$lib/utils/types';
-	import Experience from '$lib/components/organisms/Experience.svelte';
+	import type { Project, BlogArticle, Service, Conference } from '$lib/utils/types';
 
 	export let data: {
+		services: Service[];
+		conferences: Conference[];
 		projects: Project[];
 		blogArticles: BlogArticle[];
-		yearsOfExperience: number;
-		workExperience: WorkExperience[];
 	};
 
-	let { projects, blogArticles, yearsOfExperience, workExperience } = data;
+	let { services, conferences, projects, blogArticles } = data;
 </script>
 
+<Hero />
+
 <div class="container">
-	<Hero />
-	<About />
+	<Services {services} />
+	<Conferences {conferences} />
 	<Projects {projects} />
 	<RecentPosts articles={blogArticles} />
-	<Experience {yearsOfExperience} entries={workExperience} />
 </div>
