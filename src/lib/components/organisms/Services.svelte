@@ -9,7 +9,7 @@
 <ContentSection
 	id="services"
 	title="Services"
-	description="Freelance work I offer — from mobile apps to open source and AI"
+	description="Freelance work I offer — building, publishing, and maintaining mobile apps and websites, or consulting the people who do"
 >
 	<div class="grid">
 		{#each services as service}
@@ -26,6 +26,10 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 20px;
+
+		> :global(:last-child:nth-child(odd)) {
+			grid-column: 1 / -1;
+		}
 
 		@include for-phone-only {
 			grid-template-columns: 1fr;

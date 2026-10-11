@@ -4,7 +4,7 @@ export default [
   {
     title: 'Mobile App Development',
     description:
-      'Cross-platform Android & iOS apps built with Flutter — from idea and architecture to store release and beyond.',
+      'Cross-platform Android & iOS apps built with Flutter — from idea and architecture to a product ready to ship, and maintenance over time.',
     tags: [
       { label: 'Flutter', color: 'primary' },
       { label: 'Android', color: 'secondary' },
@@ -14,29 +14,40 @@ export default [
   {
     title: 'Web Development',
     description:
-      'Modern websites and web apps with a focus on clean UX, performance, and maintainable code.',
+      'Modern websites and web apps with a focus on clean UX, performance, and maintainable code — including ongoing maintenance.',
     tags: [
       { label: 'Vue.js', color: 'primary' },
       { label: 'React', color: 'primary' },
       { label: 'Angular', color: 'primary' },
+      { label: 'Web', color: 'secondary' },
     ],
   },
   {
-    title: 'Flutter Packages & Open Source',
+    title: 'App Store Publishing',
     description:
-      'Custom Flutter packages, widgets, and library maintenance — drawing on years of pub.dev and community work.',
+      'Play Store and App Store releases — signing, listings, screenshots, review, and updates.',
     tags: [
-      { label: 'pub.dev', color: 'primary' },
-      { label: 'Open Source', color: 'secondary' },
+      { label: 'Play Store', color: 'primary' },
+      { label: 'App Store', color: 'primary' },
     ],
   },
   {
-    title: 'AI-Powered Features',
+    title: 'Web Deployment',
     description:
-      'Integrating AI and machine learning into mobile and web products, from prototypes to production features.',
+      'Hosting of sites on a custom domain — DNS, HTTPS, and a setup you can redeploy without starting over.',
     tags: [
-      { label: 'AI', color: 'primary' },
-      { label: 'ML', color: 'secondary' },
+      { label: 'Custom Domain', color: 'primary' },
+      { label: 'Hosting', color: 'secondary' },
+    ],
+  },
+  {
+    title: 'Consulting',
+    description:
+      'Helping freelancers or companies build apps and websites more efficiently, and supporting them in the publishing and deployment process.',
+    tags: [
+      { label: 'Apps', color: 'primary' },
+      { label: 'Web', color: 'primary' },
+      { label: 'Publishing', color: 'secondary' },
     ],
   },
 ] as Service[];
